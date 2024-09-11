@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Leaderboard{% endblock %}
+
+{% block content %}
+<h2>Leaderboard</h2>
+<ul>
+    {% for score in scores %}
+    <li>{{ score.user }} - {{ score.total_score }}</li>
+    {% empty %}
+    <li>No scores available</li>
+    {% endfor %}
+</ul>
+{% endblock %}

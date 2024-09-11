@@ -1,0 +1,21 @@
+<!-- profiles/notifications.html -->
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Notifications</h1>
+  
+  {% if notifications %}
+    <ul>
+      {% for notification in notifications %}
+        <li>
+          <strong>{{ notification.title }}</strong> - {{ notification.message }}
+          <br><small>Received on: {{ notification.created_at }}</small>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>You have no notifications.</p>
+  {% endif %}
+  
+  <a href="{% url 'profile' %}">Back to your profile</a>
+{% endblock %}

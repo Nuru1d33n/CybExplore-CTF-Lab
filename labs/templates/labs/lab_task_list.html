@@ -1,0 +1,8 @@
+<ul>
+    {% for task in tasks %}
+        <li>
+            {{ task.title }}: {{ task.description }}
+            <span>Difficulty: {{ task.get_difficulty_display }}</span>
+        </li>
+    {% endfor %}
+</ul>
