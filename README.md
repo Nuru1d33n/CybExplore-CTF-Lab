@@ -55,8 +55,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'cybexplore_lab_db',
-        'USER': 'your_db_user',
-        'PASSWORD': 'your_db_password',
+        'USER': '******',
+        'PASSWORD': '******',
         'HOST': 'localhost',
         'PORT': '3306',
     }
