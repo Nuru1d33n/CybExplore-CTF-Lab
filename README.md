@@ -30,9 +30,10 @@ CybExplore CTF Lab is a Capture The Flag (CTF) platform designed for cybersecuri
 ```bash
 git clone https://github.com/yourusername/cybexplore-ctf-lab.git
 cd cybexplore-ctf-lab
-
+```
 ### Set Up Virtual Environment
 
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
